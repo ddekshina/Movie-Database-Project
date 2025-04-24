@@ -1,0 +1,82 @@
+.movie-detail {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .back-button {
+    margin-bottom: 20px;
+  }
+  
+  .back-button a {
+    color: #1e3a8a;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .back-button a:hover {
+    text-decoration: underline;
+  }
+  
+  .movie-detail-content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+  }
+  
+  .movie-poster img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .movie-info h1 {
+    margin: 0 0 5px;
+    color: #1e3a8a;
+  }
+  
+  .year {
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .movie-meta {
+    margin-bottom: 20px;
+  }
+  
+  .movie-meta p {
+    margin-bottom: 8px;
+  }
+  
+  .movie-plot, .movie-cast {
+    margin-top: 20px;
+  }
+  
+  .movie-plot h3, .movie-cast h3 {
+    margin-bottom: 10px;
+    color: #1e3a8a;
+  }
+  
+  .loading, .error, .not-found {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 1.2rem;
+  }
+  
+  .error {
+    color: #d32f2f;
+  }
+  
+  @media (max-width: 768px) {
+    .movie-detail-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .movie-poster {
+      max-width: 300px;
+      margin: 0 auto 20px;
+    }
+  }
